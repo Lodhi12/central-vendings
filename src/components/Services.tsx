@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { services } from "@/data/site";
 import MachineArt from "./MachineArt";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -8,13 +9,21 @@ export default function Services() {
       <div className="container-x">
         <div className="max-w-2xl">
           <p className="kicker">Services</p>
-          <h2 className="h2">One supplier for vending, coffee and water</h2>
+          <h2 className="h2">One supplier for vending and coffee</h2>
           <p className="mt-4 text-slate-600">For offices, schools, clinics, warehouses and residential buildings.</p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
             <article key={s.slug} className="flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-slate-200">
-              <MachineArt kind={s.art} className="w-full" />
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-foam">
+                <Image
+                  src={s.image}
+                  alt={s.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+                  className="object-cover"
+                />
+              </div>
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-display text-xl font-bold">{s.title}</h3>
                 <p className="mt-2 flex-1 text-slate-600">{s.short}</p>

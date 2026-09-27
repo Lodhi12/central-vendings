@@ -23,6 +23,8 @@ export const services: {
   body: string;
   points: string[];
   art: "vending" | "coffee" | "water";
+  image: string;
+  imageAlt: string;
 }[] = [
   {
     slug: "vending",
@@ -37,6 +39,8 @@ export const services: {
       "Repairs handled by our own technicians",
     ],
     art: "vending",
+    image: "/images/vending_machine_card.jpg",
+    imageAlt: "Snack and drink vending machine",
   },
   {
     slug: "coffee",
@@ -51,6 +55,8 @@ export const services: {
       "Cleaning and descaling included",
     ],
     art: "coffee",
+    image: "/images/office_coffee_card.jpg",
+    imageAlt: "Bean-to-cup coffee machine on an office break room counter",
   },
   // {
   //   slug: "water-cooler-rental",
