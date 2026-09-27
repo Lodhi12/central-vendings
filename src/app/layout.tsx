@@ -10,7 +10,8 @@ const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bric
 const body = Figtree({ subsets: ["latin"], variable: "--font-figtree" });
 
 export const metadata: Metadata = {
-  title: `${brand.name} | Vending, Coffee & Water Coolers`,
+  title: `${brand.name} | Vending & Coffee`,
+  //  & Water Coolers
   description: `${brand.name} installs and maintains vending machines, office coffee and water coolers across ${brand.area}.`,
 };
 

@@ -6,14 +6,15 @@
 export const brand = {
   name: "Central Vendings",
   short: "Central Vendings",
-  phone: "(555) 010-2040",
-  phoneHref: "tel:+15550102040",
-  email: "hello@example.com",
-  area: "Your City & Surrounding Region",
+  phone: "438-995-7718",
+  phoneHref: "tel:+14389957718",
+  email: "centralvends@gmail.com",
+  area: "Ottawa and nearby region",
   founded: 2012,
 };
 
-export type ServiceSlug = "vending" | "coffee" | "water-cooler-rental";
+export type ServiceSlug = "vending" | "coffee" 
+// | "water-cooler-rental";
 
 export const services: {
   slug: ServiceSlug;
@@ -51,20 +52,20 @@ export const services: {
     ],
     art: "coffee",
   },
-  {
-    slug: "water-cooler-rental",
-    title: "Water cooler rental",
-    short:
-      "Bottled or plumbed-in coolers with hot and cold taps, installed and sanitised by our team.",
-    body: "Rent bottled or bottle-free coolers with hot and cold water. We install them, swap bottles on schedule and sanitise every unit so your team always has clean, chilled water.",
-    points: [
-      "Bottled and bottle-free units",
-      "Hot and cold water taps",
-      "Scheduled sanitising",
-      "Flexible monthly rental",
-    ],
-    art: "water",
-  },
+  // {
+  //   slug: "water-cooler-rental",
+  //   title: "Water cooler rental",
+  //   short:
+  //     "Bottled or plumbed-in coolers with hot and cold taps, installed and sanitised by our team.",
+  //   body: "Rent bottled or bottle-free coolers with hot and cold water. We install them, swap bottles on schedule and sanitise every unit so your team always has clean, chilled water.",
+  //   points: [
+  //     "Bottled and bottle-free units",
+  //     "Hot and cold water taps",
+  //     "Scheduled sanitising",
+  //     "Flexible monthly rental",
+  //   ],
+  //   art: "water",
+  // },
 ];
 
 export const steps = [

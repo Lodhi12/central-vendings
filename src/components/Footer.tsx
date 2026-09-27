@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-x grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Logo light />
-          <p className="mt-4 max-w-xs text-sm text-white/65">Vending, office coffee and water coolers for {brand.area}.</p>
+          <p className="mt-4 max-w-xs text-sm text-white/65">Vending and office coffee for {brand.area}.</p>
         </div>
         <div>
           <h3 className="font-display font-bold">Quick links</h3>
@@ -26,7 +26,7 @@ export default function Footer() {
           <h3 className="font-display font-bold">Service area</h3>
           {/* Replace with your own Google Maps embed URL */}
           <div className="mt-4 flex aspect-video items-center justify-center rounded-xl bg-white/10 text-center text-xs text-white/60">
-            Map embed goes here
+            <iframe src="https://www.google.com/maps/d/embed?mid=1hg9fW2stCNhfI8PU2WsB2pfZZr5I7XA&ehbc=2E312F" width="500" height="250"></iframe>
           </div>
         </div>
       </div>
